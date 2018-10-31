@@ -10,6 +10,10 @@ function Thermostat() {
   this.MEDIUM_ENERGY_USAGE_LIMIT = 18;
 };
 
+Thermostat.prototype.getCurrentTemperature = function() {
+  return this.temperature;
+};
+
 Thermostat.prototype.up = function() {
   if (this.isMaximumTemperature()) {
     return;
@@ -49,10 +53,6 @@ Thermostat.prototype.isPowerSavingModeOn = function() {
 
 Thermostat.prototype.resetTemperature = function() {
   this.temperature = this.DEFAULT_TEMPERATURE
-};
-
-Thermostat.prototype.getCurrentTemperature = function() {
-  return this.temperature;
 };
 
 Thermostat.prototype.energyUsage = function() {

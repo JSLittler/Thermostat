@@ -2,8 +2,20 @@
 <html>
   <head>
     <title>Thermostat</title>
+    <script src="js/thermostat.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/interface.js"></script>
+    <link rel='stylesheet' href='css/ThermostatStyleSheet.css'>
   </head>
   <body>
+    <section>
+      <h1>Current city: <span id="city"> London </span> Temperature: <span id="current-temperature">20</span></h1>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <input type="submit"></input>
+      </form>
+      <h1>Current temperature: <span id="current-temperature"></span></h1>
+    </section>
     <section>
       <h1 id="temperature"></h1>
       <p>
@@ -15,6 +27,5 @@
         <button id="powersaving-off">PSM off</button>
       </p>
     </section>
-    <script src="js/thermostat.js"></script>
   </body>
 </html>

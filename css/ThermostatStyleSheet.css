@@ -1,0 +1,21 @@
+body {
+  background-color: grey;
+  font-size: 150%;
+  text-align: center;
+}
+
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: black;
+}
+
+.high-usage {
+  color: red;
+}
+
+#city {
+  color: blue;
+}
